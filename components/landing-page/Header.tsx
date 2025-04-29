@@ -52,8 +52,10 @@ export const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <NavLinks />
-          <Button variant="default" size="sm" className="bg-primary/90 hover:bg-primary transition-colors duration-300">
-            Apply
+          <Button variant="default" size="sm" className="bg-primary/90 hover:bg-primary transition-colors duration-300" asChild>
+            <a href="https://fs-students.activehosted.com/f/1" target="_blank" rel="noopener noreferrer">
+              Apply
+            </a>
           </Button>
         </nav>
 
@@ -72,8 +74,10 @@ export const Header = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border animate-in slide-in-from-top duration-300">
           <nav className="container mx-auto py-4 px-4 flex flex-col space-y-4">
             <NavLinks mobile setMobileMenuOpen={setMobileMenuOpen} />
-            <Button variant="default" size="sm" className="bg-primary/90 hover:bg-primary transition-colors duration-300 w-full">
-              Apply
+            <Button variant="default" size="sm" className="bg-primary/90 hover:bg-primary transition-colors duration-300 w-full" asChild>
+              <a href="https://fs-students.activehosted.com/f/1" target="_blank" rel="noopener noreferrer" className="w-full text-center" onClick={() => setMobileMenuOpen(false)}> 
+                Apply
+              </a>
             </Button>
           </nav>
         </div>
@@ -82,12 +86,18 @@ export const Header = () => {
   );
 };
 
-const NavLinks = ({ mobile = false, setMobileMenuOpen = undefined }) => {
+interface NavLinksProps {
+  mobile?: boolean;
+  setMobileMenuOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const NavLinks: React.FC<NavLinksProps> = ({ mobile = false, setMobileMenuOpen }) => {
   const links = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Activities', href: '#' },
-    { name: 'Membership', href: '#' },
+    { name: 'Home', href: '#home' },
+    { name: 'Features', href: '#features' },
+    { name: 'Activities', href: '#activities' },
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Membership', href: '#membership' },
   ];
 
   const handleClick = () => {
@@ -101,10 +111,9 @@ const NavLinks = ({ mobile = false, setMobileMenuOpen = undefined }) => {
       key={link.name}
       href={link.href}
       className={cn(
-        "relative group", 
+        "relative group",
         mobile ? "block py-2" : "hover:text-primary transition-colors"
       )}
-      onClick={handleClick}
     >
       {link.name}
       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />

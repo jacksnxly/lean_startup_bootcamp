@@ -12,7 +12,6 @@ export const Footer = () => {
   const locations = [
     { city: "Frankfurt", country: "Germany" },
     { city: "Munich", country: "Germany" },
-    { city: "Vienna", country: "Austria" },
   ];
   
   const quickLinks = [
@@ -131,7 +130,7 @@ export const Footer = () => {
       <div className="border-t border-border py-6">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © {currentYear} Prive. All rights reserved.
+            {currentYear} Prive. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-muted-foreground">
             <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>

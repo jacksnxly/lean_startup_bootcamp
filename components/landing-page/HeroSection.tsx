@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Noto_Serif } from 'next/font/google';
 import { cn } from '@/lib/utils';
@@ -21,16 +20,15 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-center text-center min-h-[90vh] overflow-hidden">
-      {/* Hero Background Image */}
-      <Image
-        src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1920"
-        alt="Group of diverse friends enjoying activities together"
-        fill={true}
-        style={{ objectFit: 'cover' }}
-        className="absolute inset-0 z-0"
-        priority
-        quality={90}
+    <section className="relative flex items-center justify-center text-center min-h-[90vh] overflow-hidden" id="home">
+      {/* Hero Background Video */}
+      <video
+        src="/assets/video/prive.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
       />
       
       {/* Gradient Overlay */}
@@ -42,7 +40,7 @@ export const HeroSection = () => {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       )}>
         <span className="inline-block bg-chart-1/20 border border-chart-1/30 text-white px-5 py-2 rounded-full text-sm mb-6 backdrop-blur-sm">
-          Launching Now in Frankfurt, Munich, and Vienna
+          Launching Now in Frankfurt and Munich
         </span>
         
         <h1 className={cn(
@@ -56,12 +54,15 @@ export const HeroSection = () => {
           Join an exclusive community of like-minded individuals seeking authentic connections through sports and curated experiences.
         </p>
         
-        <Button 
-          variant="default" 
+        <Button
+          variant="default"
           size="lg"
           className="bg-primary/90 hover:bg-primary text-primary-foreground transition-all duration-300 transform hover:scale-105"
+          asChild // Use Button styling for the anchor tag
         >
-          Apply for Membership
+          <a href="https://fs-students.activehosted.com/f/1" target="_blank" rel="noopener noreferrer">
+            Apply for Membership
+          </a>
         </Button>
       </div>
     </section>

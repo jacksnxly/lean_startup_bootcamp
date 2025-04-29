@@ -3,39 +3,39 @@ import { cn } from '@/lib/utils';
 
 export const ActivitiesSection = () => {
   const activities = [
-    { 
-      image: "https://images.pexels.com/photos/3755440/pexels-photo-3755440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      alt: "Tennis match between friends", 
+    {
+      image: "/assets/images/landing/outdoor-padel-lesson-with-a-padel-coach-2024-10-18-10-04-13-utc.jpg",
+      alt: "Padel lesson outdoors",
       title: "Sports Matches",
       description: "Connect through competitive and casual games"
     },
-    { 
-      image: "https://images.pexels.com/photos/5935232/pexels-photo-5935232.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      alt: "Cultural city tour", 
+    {
+      image: "/assets/images/landing/businesswoman-in-frankfurt-2025-03-31-19-54-13-utc.jpg",
+      alt: "Businesswoman looking over Frankfurt skyline",
       title: "Cultural Experiences",
       description: "Discover hidden gems in your city"
     },
-    { 
-      image: "https://images.pexels.com/photos/5386754/pexels-photo-5386754.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      alt: "Wine tasting event", 
-      title: "Wine Tours",
-      description: "Taste exceptional wines with experts"
+    {
+      image: "/assets/images/landing/work-colleagues-in-a-restaurant-celebrating-conclu-2024-11-26-10-34-11-utc.jpg",
+      alt: "Colleagues celebrating at a restaurant",
+      title: "Social Dining",
+      description: "Enjoy curated food and drink experiences"
     },
-    { 
-      image: "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      alt: "Evening networking event", 
+    {
+      image: "/assets/images/landing/large-group-toasting-together-at-outdoor-barbecue-2025-04-22-04-31-08-utc.jpg",
+      alt: "Group toasting at outdoor barbecue",
       title: "Networking Nights",
       description: "Expand your social and professional circle"
     },
-    { 
-      image: "https://images.pexels.com/photos/6308141/pexels-photo-6308141.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      alt: "Indoor rock climbing session", 
+    {
+      image: "/assets/images/landing/young-hikers-relaxing-on-the-top-of-the-mountain-2025-03-05-05-13-16-utc.jpg",
+      alt: "Hikers relaxing on a mountain top",
       title: "Adventure Activities",
       description: "Challenge yourself with thrilling experiences"
     },
-    { 
-      image: "https://images.pexels.com/photos/8436742/pexels-photo-8436742.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      alt: "Dance workshop", 
+    {
+      image: "/assets/images/landing/interracial-couple-prepare-food-together-with-a-pr-2024-12-01-10-58-40-utc.jpg",
+      alt: "Couple cooking together",
       title: "Skill Workshops",
       description: "Learn something new in a supportive environment"
     },
