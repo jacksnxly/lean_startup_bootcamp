@@ -35,18 +35,15 @@ export const Header = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" aria-label="Prive" className="flex items-center gap-2 group">
-          <div className="relative w-6 h-6 transition-transform group-hover:scale-110">
+          <div className="relative w-8 h-8 transition-transform group-hover:scale-110">
             <Image
-              src="/logo.png"
+              src="/assets/logo/prive_logo.png"
               alt="Prive Logo"
               fill
               style={{ objectFit: 'contain' }}
               priority
             />
           </div>
-          <span className={`text-2xl font-thin tracking-wider ${notoSerif.className} group-hover:text-primary transition-colors`}>
-            Prive
-          </span>
         </Link>
 
         {/* Desktop Navigation */}
