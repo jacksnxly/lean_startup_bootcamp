@@ -29,6 +29,18 @@ This project strictly follows the Lean Startup methodology. Key principles inclu
 4.  **Iterative Development:** We will adapt and improve our product based on feedback and metrics.
 5.  **Pivot or Persevere:** If our initial idea doesn't gain traction, we will pivot to a new approach.
 
+## Features
+
+*   **Landing Page:**
+    *   Redesigned UI with modern components (Shadcn UI, Tailwind).
+    *   Dynamic video background in the hero section.
+    *   Sections for Features, Activities (More Than Just a Club), Social Proof (Testimonials), and How It Works.
+    *   Header navigation links scroll to corresponding page sections.
+    *   Added a "Past Events" section showcasing recent activities.
+    *   Footer with relevant links.
+*   **Activity Exploration (/explore):**
+    *   Interactive map displaying activity locations (Leaflet).
+
 ## Team Members
 
 *   [Team Member 1 Name] - [Role]
@@ -43,4 +55,4 @@ This project strictly follows the Lean Startup methodology. Key principles inclu
 *   **Data Analytics:** Integrate data analytics tools to gain deeper insights into user behavior.
 *   **Backend Development:** Create a robust backend system to support the web app.
 *   **Scaling:** Plan for scaling the application to accommodate a growing user base.
-* **Marketing:** Develop a marketing plan to reach the target audience.
+*   **Marketing:** Develop a marketing plan to reach the target audience.

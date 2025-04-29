@@ -26,11 +26,11 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-secondary/5 reveal-section opacity-0 transition-all duration-700" id="features">
+    <section className="py-24 bg-neutral-900 reveal-section opacity-0 transition-all duration-700" id="features">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What Makes Us Different</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">What Makes Us Different</h2>
+          <p className="text-neutral-300 max-w-2xl mx-auto">
             We've reimagined social networking by combining digital convenience with real-world experiences.
           </p>
         </div>

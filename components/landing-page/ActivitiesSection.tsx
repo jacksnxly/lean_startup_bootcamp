@@ -42,7 +42,7 @@ export const ActivitiesSection = () => {
   ];
 
   return (
-    <section className="py-24 reveal-section opacity-0 transition-all duration-700" id="activities">
+    <section className="py-24 reveal-section opacity-0 transition-all duration-700 bg-secondary/5" id="activities">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">More Than Just a Club</h2>
